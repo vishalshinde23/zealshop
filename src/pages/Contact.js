@@ -3,7 +3,7 @@ import Footer from '../components/common/Footer'
 
 const Contact = () => {
   return (
-    <div>
+    <div className=' bg-rose-900  w-full h-full'>
       <div className='w-[80%] flex flex-col align-center justify-center mx-auto    ' >
       <p className='text-4xl font-semibold text-center mt-4  text-black    '>Please chat with us </p>
 

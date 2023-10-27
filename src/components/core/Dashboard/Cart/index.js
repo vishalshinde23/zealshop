@@ -9,12 +9,12 @@ const Cart = () => {
   const dispatch=useDispatch()
   // // console.log("this is cart",cart)
   return (
-    <div>
-      <div className="flex flex-1 flex-col ">
+    <div className=" w-full min-h-[100vh] bg-[#20201e] ">
+      <div className="flex flex-1 flex-col gap-4 p-4  ">
       {cart.map((item, indx) => (
         <div
           key={item._id}
-          className={`flex flex-1 bg-white w-full p-4  ${
+          className={`flex flex-1 bg-gradient-to-r from-[#2e2d21] to-[#2b2a21]  rounded-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] w-10/12 mx-auto  p-2 gap-4 ${
             indx !== cart.length - 1 && "border-b border-black "
           } ${indx !== 0 && "mt-6"} `}
         >
@@ -22,13 +22,13 @@ const Cart = () => {
             <img
               src={item?.imageUrl}
               alt={item?.title}
-              className="h-[400px] w-[320px] rounded-lg object-cover bg-yellow-200 p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] "
+              className="h-[300px] w-[220px] rounded-lg object-cover bg-yellow-200 p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105"
             />
             <div className="flex flex-col space-y-1">
-              <p className="text-3xl  mt-10 text-center font-medium text-black">
+              <p className="text-3xl  mt-10 text-center font-medium text-green-500">
                 {item?.title}
               </p>
-              <p className="text-xl text-black">
+              <p className="text-xl text-red-400">
                 {item?.description}
               </p>
              
@@ -37,10 +37,10 @@ const Cart = () => {
           <div className="flex flex-col  mr-[300px] mt-[140px] space-y-2">
             <button
               onClick={() => dispatch(removeFromCart(item._id))}
-              className="flex items-center gap-x-1 rounded-md border border-black bg-black py-3 px-[12px] text-pink-200"
+              className="flex items-center gap-x-1 rounded-md border border-black bg-yellow-500 py-3 px-[12px] text-pink-200 hover:bg-red-500"
             >
-              <RiDeleteBin6Line />
-              <span>Remove</span>
+              <RiDeleteBin6Line className='text-zinc-900 font-bold' />
+              <span className='text-zinc-900 font-bold '>Remove</span>
             </button>
             <p className="mb-6 text-3xl font-medium text-black">
               ₹ {item?.price}

@@ -13,6 +13,7 @@ import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 import { useSelector } from 'react-redux';
 import { apiConnector } from '../../services/apiconnector';
 import SearchArea from "../core/HomeData/SearchArea"
+import "../core/HomeData/poster.css"
 const Navbar = () => {
   const {user}=useSelector((state)=>state.profile)
   const{token}=useSelector((state)=>state.auth)
@@ -49,7 +50,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <div className='flex justify-between bg-gradient-to-r from-neutral-500 to-stone-700 text-center w-full align-center  h-[70px]   pl-4'>
+        <div className='flex justify-between bg-rose-900 text-center w-full align-center  h-[70px]   pl-4'>
             <div className='mt-[-10px]'>
                 <Link to="/">
                     <img src={logo} className='h-[100px] w-[100px] '/>

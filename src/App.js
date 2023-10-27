@@ -33,7 +33,7 @@ function App() {
   const {user}=useSelector((state)=>state.profile)
   return (
    <div className="w-screen min-h-screen  flex flex-col text-white 
-   bg-gradient-to-r from-stone-800 to-orange-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+   bg-rose-900  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>

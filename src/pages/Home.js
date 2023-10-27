@@ -6,27 +6,28 @@ import ImgSlides from '../components/core/HomeData/ImgSlides'
 import ImgSlider from '../components/core/HomeData/ImgSlider'
 import Footer from '../components/common/Footer'
 import ViewShop from './ViewShop'
+import Poster from '../components/core/HomeData/poster'
 
 const Home = () => {
   return (
-    <div  className='flex flex-col  gap-4'>
+    <div  className=''>
+      <Poster/>
       
     {/* <ViewShop/> */}
+    
    
-  <div className='p-2'>
-
-  <div className='p-4 '>
-  <ImgSlider className="p-2"/>
-  </div>
+  
+  <ImgSlider />
+ 
 
   
  
-  <div className='p-4'>
-  <ImgSlides className="p-2"/>
-  </div>
+  
+  <ImgSlides />
+  
 
 
-  </div>
+  
   <Footer/>
    
     </div>
