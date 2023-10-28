@@ -1,6 +1,7 @@
 const express = require("express");
+const cors=require('cors');
 const app = express();
-
+app.use(cors());
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const shopRoutes=require("./routes/Shop");
@@ -16,7 +17,7 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 //database connect
 database.connect();
