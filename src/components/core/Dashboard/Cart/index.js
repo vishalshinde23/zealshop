@@ -9,12 +9,12 @@ const Cart = () => {
   const dispatch=useDispatch()
   // // console.log("this is cart",cart)
   return (
-    <div className=" w-full min-h-[100vh] bg-[#20201e] ">
+    <div className=" w-full min-h-[100vh] bg-gradient-to-r from-yellow-400 via-pink-800 to-yellow-400 ">
       <div className="flex flex-1 flex-col gap-4 p-4  ">
       {cart.map((item, indx) => (
         <div
           key={item._id}
-          className={`flex flex-1 bg-gradient-to-r from-[#2e2d21] to-[#2b2a21]  rounded-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] w-10/12 mx-auto  p-2 gap-4 ${
+          className={`flex flex-1 bg-gradient-to-r from-yellow-400 via-pink-800 to-yellow-400  rounded-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] w-10/12 mx-auto  p-2 gap-4 ${
             indx !== cart.length - 1 && "border-b border-black "
           } ${indx !== 0 && "mt-6"} `}
         >

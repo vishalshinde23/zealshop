@@ -9,8 +9,8 @@ import "./poster.css"
 
 const poster = () => {
   return (
-    <div className="bg-rose-900   w-full h-[650px] p-4">
-      <div className=' w-11/12 h-full mx-auto flex bg-gradient-to-r from-fuchsia-800  via-blue-200  to-sky-400  glass  gap-10 justify-center    rounded-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
+    <div className="bg-stone-700   w-full h-[650px] p-4">
+      <div className=' w-11/12 h-full mx-auto flex bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500   glass  gap-10 justify-center    rounded-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
        
         <div className='translate-x-[-70px] relative  '>
         <div>

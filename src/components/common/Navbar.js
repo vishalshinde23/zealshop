@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <div className='flex justify-between bg-rose-900 text-center w-full align-center  h-[70px]   pl-4'>
+        <div className='flex justify-between bg-stone-700 text-center w-full align-center  h-[70px]   pl-4'>
             <div className='mt-[-10px]'>
                 <Link to="/">
                     <img src={logo} className='h-[100px] w-[100px] '/>

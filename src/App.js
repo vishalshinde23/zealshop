@@ -29,11 +29,12 @@ import shopSection from "./components/core/Dashboard/ShopperCourses/shopSection"
 import ShopperCourses from "./components/core/Dashboard/ShopperCourses";
 import MyShops from "./components/core/Dashboard/MyShops";
 import EditSection from "./components/core/Dashboard/EditSection"
+
 function App() {
   const {user}=useSelector((state)=>state.profile)
   return (
    <div className="w-screen min-h-screen  flex flex-col text-white 
-   bg-rose-900  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+   bg-stone-700  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>

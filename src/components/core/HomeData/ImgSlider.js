@@ -16,8 +16,8 @@ import Img_Card from './Img_Card'
 // import {Autoplay ,FreeMode,Pagination} from "swiper
 const ImgSlider = () => {
   return (
-    <div className='bg-zinc-800 w-full h-[650px] p-16 py-12 rounded-lg gap-16  flex flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]'>
-       <div className='bg-neutral-200 gap-4   rounded-lg    shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]'>
+    <div className='bg-stone-700 w-full h-[650px] p-16 py-12 gap-16  flex flex-col '>
+       <div className='bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500  gap-4   rounded-lg    shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]'>
        <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={2}
@@ -40,8 +40,9 @@ const ImgSlider = () => {
       <SwiperSlide><img src={`https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-22092023-Trends-Teamspirit-Frendz-Starting99.jpg`} className=' p-2 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]hover:scale-110 duration-200 transition-2s'/></SwiperSlide>
       ...
     </Swiper>
+    
        </div>
-       <div className=' w-10/12 bg-sky-200 rounded-lg mx-auto p-6 text-center  shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
+       <div className=' p-2 bg-sky-200 rounded-lg   text-center  shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
         <p className='  btn-pink '>
         You're worth it: shop our collection and feel great about your look. 
         </p>
